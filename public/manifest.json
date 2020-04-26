@@ -5,7 +5,7 @@
   "manifest_version": 2,
   "content_scripts": [
     {
-      "matches": ["https://www.google.com/"],
+      "matches": ["<all_urls>"],
       "css": ["/static/css/main.css"],
       "js": ["/static/js/main.js"]
     }

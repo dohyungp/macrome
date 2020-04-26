@@ -18,11 +18,7 @@ function App() {
       window.removeEventListener("keyup", handleUserMacro);
     };
   }, [emojifier]);
-  return (
-    <div className="App">
-      <textarea />
-    </div>
-  );
+  return <div className="machrome__app"></div>;
 }
 
 export default App;
