@@ -4,10 +4,11 @@ import "./index.css";
 import App from "./App";
 // import * as serviceWorker from "./serviceWorker";
 
-const rootDiv = document.createElement("DIV");
-rootDiv.setAttribute("id", "macrome__root");
-document.body.appendChild(rootDiv);
-
+if (!document.getElementById("macrome__root")) {
+  const rootDiv = document.createElement("DIV");
+  rootDiv.setAttribute("id", "macrome__root");
+  document.body.appendChild(rootDiv);
+}
 ReactDOM.render(
   <React.StrictMode>
     <App />
